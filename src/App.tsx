@@ -1,12 +1,15 @@
 import './App.css'
-import ProfileComponent from "./Profile/Profile.component";
-import ProfileProvider from "./Profile/Profile.provider";
-import ProfileService from "./Profile/Profile.service";
+import ProfileComponent from "./example/Profile/Profile.component";
+import ProfileProvider from "./example/Profile/Profile.provider";
+import ProfileService from "./example/Profile/Profile.service";
+import PetModule from "./example/Pet/Pet.module";
 
 function App() {
   return (
     <ProfileProvider service={new ProfileService()}>
-      <ProfileComponent />
+      <PetModule>
+        <ProfileComponent />
+      </PetModule>
     </ProfileProvider>
   )
 }

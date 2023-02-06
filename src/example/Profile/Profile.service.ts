@@ -1,4 +1,4 @@
-import RenderService from "../utilities/Render/Render.service";
+import RenderService from "../../context/Render/Render.service";
 import type {ProfileState} from "./Profile.types";
 
 const DEFAULT_STATE: ProfileState = {

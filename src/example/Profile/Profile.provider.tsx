@@ -1,5 +1,5 @@
 import type ProfileService from "./Profile.service";
-import createContext from "../utilities/createContext";
+import createContext from "../../context/createContext";
 
 const [Provider, useProvider] = createContext<ProfileService>("ProfileContext");
 
